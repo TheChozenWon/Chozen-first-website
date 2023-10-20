@@ -1,0 +1,61 @@
+<!--using CSS grid practice-->
+<!--inline styles = styling in html line-->
+<!--a grid is a layout that has rows and columns, 1 by 2 means 1 row and 2 columns grid
+the 2 100px example below describes how wide the grid columns are both are widths. extra px after makes more columns-->
+<!--if more div than grid columns then they become rows by wrap around text-->
+<!--fr means free space = take up remaining space in grid-->
+<!--flexbox similar to CSS grid, grid layout if change order of elements the style changes(rigid layout), but flexbox stay the same(flexible layout)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+</head>
+<body style="padding-bottom: 1000px;">
+  <div style="display: grid; 
+  grid-template-columns: 100px 100px;">
+    <div style="background-color: lightblue;">div 1</div>
+    <div style="background-color: lightpink;">div 2<p>text</p></div>
+  </div>
+
+    <div style="margin-top: 30px; 
+    display: grid; 
+    grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px</div>
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: lightpink;">100px</div>
+    </div>
+
+      <div style="margin-top: 30px; 
+      display: grid; 
+      grid-template-columns: 100px 1fr">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+      </div>
+
+        <div style="margin-top: 30px; 
+        display: grid; 
+        grid-template-columns: 100px 1fr 2fr">
+          <div style="background-color: lightblue;">100px</div>
+          <div style="background-color: lightpink;">1fr</div>
+          <div style="background-color: lightblue;">2fr</div>
+        </div>
+
+          <div style="margin-top: 30px; 
+          display: grid; 
+          grid-template-columns: 1fr 1fr 1fr; 
+          column-gap: 20px; 
+          row-gap: 40px;">
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+          </div>
+          </div>
+
+</body>
+</html>
